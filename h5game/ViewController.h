@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
 @interface ViewController : UIViewController
+{
+    UIActivityIndicatorView *activityIndicator;
+    UILabel *load;
+}
 
-
+@property (nonatomic, strong)UIView *Loading;
 @end
 

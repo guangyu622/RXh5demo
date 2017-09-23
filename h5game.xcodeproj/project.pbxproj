@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5642CD501F38CA5500621410 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5642CD4F1F38CA5500621410 /* Security.framework */; };
+		5642CD561F38CBBB00621410 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5642CD551F38CBBB00621410 /* RSAEncryptor.m */; };
+		5642CD5A1F38D14300621410 /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 5642CD521F38CAB400621410 /* private_key.p12 */; };
+		5642CD5B1F38D14300621410 /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 5642CD531F38CAB400621410 /* public_key.der */; };
+		5664586D1F0CDAEC00937262 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5664586C1F0CDAEC00937262 /* AdSupport.framework */; };
 		567B1A381EF7AE6A00A2CB5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 567B1A371EF7AE6A00A2CB5B /* main.m */; };
 		567B1A3B1EF7AE6A00A2CB5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 567B1A3A1EF7AE6A00A2CB5B /* AppDelegate.m */; };
 		567B1A3E1EF7AE6A00A2CB5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 567B1A3D1EF7AE6A00A2CB5B /* ViewController.m */; };
 		567B1A411EF7AE6A00A2CB5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 567B1A3F1EF7AE6A00A2CB5B /* Main.storyboard */; };
 		567B1A431EF7AE6A00A2CB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 567B1A421EF7AE6A00A2CB5B /* Assets.xcassets */; };
 		567B1A461EF7AE6A00A2CB5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 567B1A441EF7AE6A00A2CB5B /* LaunchScreen.storyboard */; };
-		567B1A511EF7AE6A00A2CB5B /* h5gameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 567B1A501EF7AE6A00A2CB5B /* h5gameTests.m */; };
-		567B1A5C1EF7AE6B00A2CB5B /* h5gameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 567B1A5B1EF7AE6B00A2CB5B /* h5gameUITests.m */; };
+		56F40CBE1F39A00C00A5153E /* IPAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = 56F40CBD1F39A00C00A5153E /* IPAddress.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,22 +39,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		567B1A331EF7AE6A00A2CB5B /* h5game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = h5game.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5642CD4F1F38CA5500621410 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5642CD521F38CAB400621410 /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; name = private_key.p12; path = "../../../证书/ios/private_key.p12"; sourceTree = "<group>"; };
+		5642CD531F38CAB400621410 /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; name = public_key.der; path = "../../../证书/ios/public_key.der"; sourceTree = "<group>"; };
+		5642CD541F38CBBB00621410 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSAEncryptor.h; path = h5game/RSAEncryptor.h; sourceTree = "<group>"; };
+		5642CD551F38CBBB00621410 /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSAEncryptor.m; path = h5game/RSAEncryptor.m; sourceTree = "<group>"; };
+		566458691F0CD8B100937262 /* ASIdentifierManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ASIdentifierManager.h; path = System/Library/Frameworks/AdSupport.framework/Headers/ASIdentifierManager.h; sourceTree = SDKROOT; };
+		5664586C1F0CDAEC00937262 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		5671D33A1F0C990800638CAD /* HLparameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLparameter.h; sourceTree = "<group>"; };
+		567B1A331EF7AE6A00A2CB5B /* 懒人传奇.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "懒人传奇.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		567B1A371EF7AE6A00A2CB5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		567B1A391EF7AE6A00A2CB5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		567B1A3A1EF7AE6A00A2CB5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		567B1A3C1EF7AE6A00A2CB5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		567B1A3D1EF7AE6A00A2CB5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		567B1A3D1EF7AE6A00A2CB5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		567B1A401EF7AE6A00A2CB5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		567B1A421EF7AE6A00A2CB5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		567B1A451EF7AE6A00A2CB5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		567B1A471EF7AE6A00A2CB5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		567B1A4C1EF7AE6A00A2CB5B /* h5gameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = h5gameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		567B1A501EF7AE6A00A2CB5B /* h5gameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = h5gameTests.m; sourceTree = "<group>"; };
-		567B1A521EF7AE6A00A2CB5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		567B1A571EF7AE6B00A2CB5B /* h5gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = h5gameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		567B1A5B1EF7AE6B00A2CB5B /* h5gameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = h5gameUITests.m; sourceTree = "<group>"; };
-		567B1A5D1EF7AE6B00A2CB5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F40CB81F39500500A5153E /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
+		56F40CBD1F39A00C00A5153E /* IPAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IPAddress.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5642CD501F38CA5500621410 /* Security.framework in Frameworks */,
+				5664586D1F0CDAEC00937262 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +90,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5642CD511F38CA6B00621410 /* RSA加密 */ = {
+			isa = PBXGroup;
+			children = (
+				5642CD541F38CBBB00621410 /* RSAEncryptor.h */,
+				5642CD551F38CBBB00621410 /* RSAEncryptor.m */,
+				5642CD521F38CAB400621410 /* private_key.p12 */,
+				5642CD531F38CAB400621410 /* public_key.der */,
+			);
+			name = "RSA加密";
+			sourceTree = "<group>";
+		};
+		5664586A1F0CDAB200937262 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5642CD4F1F38CA5500621410 /* Security.framework */,
+				5664586C1F0CDAEC00937262 /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		567B1A2A1EF7AE6A00A2CB5B = {
 			isa = PBXGroup;
 			children = (
+				5642CD511F38CA6B00621410 /* RSA加密 */,
+				5664586A1F0CDAB200937262 /* Frameworks */,
 				567B1A351EF7AE6A00A2CB5B /* h5game */,
-				567B1A4F1EF7AE6A00A2CB5B /* h5gameTests */,
-				567B1A5A1EF7AE6B00A2CB5B /* h5gameUITests */,
 				567B1A341EF7AE6A00A2CB5B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +123,7 @@
 		567B1A341EF7AE6A00A2CB5B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				567B1A331EF7AE6A00A2CB5B /* h5game.app */,
+				567B1A331EF7AE6A00A2CB5B /* 懒人传奇.app */,
 				567B1A4C1EF7AE6A00A2CB5B /* h5gameTests.xctest */,
 				567B1A571EF7AE6B00A2CB5B /* h5gameUITests.xctest */,
 			);
@@ -103,8 +135,12 @@
 			children = (
 				567B1A391EF7AE6A00A2CB5B /* AppDelegate.h */,
 				567B1A3A1EF7AE6A00A2CB5B /* AppDelegate.m */,
+				56F40CBD1F39A00C00A5153E /* IPAddress.c */,
+				56F40CB81F39500500A5153E /* IPAddress.h */,
 				567B1A3C1EF7AE6A00A2CB5B /* ViewController.h */,
+				566458691F0CD8B100937262 /* ASIdentifierManager.h */,
 				567B1A3D1EF7AE6A00A2CB5B /* ViewController.m */,
+				5671D33A1F0C990800638CAD /* HLparameter.h */,
 				567B1A3F1EF7AE6A00A2CB5B /* Main.storyboard */,
 				567B1A421EF7AE6A00A2CB5B /* Assets.xcassets */,
 				567B1A441EF7AE6A00A2CB5B /* LaunchScreen.storyboard */,
@@ -120,24 +156,6 @@
 				567B1A371EF7AE6A00A2CB5B /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		567B1A4F1EF7AE6A00A2CB5B /* h5gameTests */ = {
-			isa = PBXGroup;
-			children = (
-				567B1A501EF7AE6A00A2CB5B /* h5gameTests.m */,
-				567B1A521EF7AE6A00A2CB5B /* Info.plist */,
-			);
-			path = h5gameTests;
-			sourceTree = "<group>";
-		};
-		567B1A5A1EF7AE6B00A2CB5B /* h5gameUITests */ = {
-			isa = PBXGroup;
-			children = (
-				567B1A5B1EF7AE6B00A2CB5B /* h5gameUITests.m */,
-				567B1A5D1EF7AE6B00A2CB5B /* Info.plist */,
-			);
-			path = h5gameUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +175,7 @@
 			);
 			name = h5game;
 			productName = h5game;
-			productReference = 567B1A331EF7AE6A00A2CB5B /* h5game.app */;
+			productReference = 567B1A331EF7AE6A00A2CB5B /* 懒人传奇.app */;
 			productType = "com.apple.product-type.application";
 		};
 		567B1A4B1EF7AE6A00A2CB5B /* h5gameTests */ = {
@@ -207,7 +225,13 @@
 				TargetAttributes = {
 					567B1A321EF7AE6A00A2CB5B = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 6H764BVCAD;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					567B1A4B1EF7AE6A00A2CB5B = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -246,6 +270,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5642CD5A1F38D14300621410 /* private_key.p12 in Resources */,
+				5642CD5B1F38D14300621410 /* public_key.der in Resources */,
 				567B1A461EF7AE6A00A2CB5B /* LaunchScreen.storyboard in Resources */,
 				567B1A431EF7AE6A00A2CB5B /* Assets.xcassets in Resources */,
 				567B1A411EF7AE6A00A2CB5B /* Main.storyboard in Resources */,
@@ -275,6 +301,8 @@
 			files = (
 				567B1A3E1EF7AE6A00A2CB5B /* ViewController.m in Sources */,
 				567B1A3B1EF7AE6A00A2CB5B /* AppDelegate.m in Sources */,
+				5642CD561F38CBBB00621410 /* RSAEncryptor.m in Sources */,
+				56F40CBE1F39A00C00A5153E /* IPAddress.c in Sources */,
 				567B1A381EF7AE6A00A2CB5B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				567B1A511EF7AE6A00A2CB5B /* h5gameTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +318,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				567B1A5C1EF7AE6B00A2CB5B /* h5gameUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,10 +452,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shuxin Zhao (TN7WQV3DQV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6H764BVCAD;
 				INFOPLIST_FILE = h5game/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hlh5game.h5game;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haolin.danjilanyue;
+				PRODUCT_NAME = "懒人传奇";
+				PROVISIONING_PROFILE = "b5f1b2d4-27d3-4c2f-8f36-2ae3dd1aa145";
+				PROVISIONING_PROFILE_SPECIFIER = devdanjilanyue;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -437,10 +471,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shuxin Zhao (43FLESVZ7Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 6H764BVCAD;
 				INFOPLIST_FILE = h5game/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hlh5game.h5game;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haolin.danjilanyue;
+				PRODUCT_NAME = "懒人传奇";
+				PROVISIONING_PROFILE = "928068fa-3143-4e3a-a33b-9c9a88c09bf5";
+				PROVISIONING_PROFILE_SPECIFIER = dislanyue;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -509,6 +551,7 @@
 				567B1A621EF7AE6B00A2CB5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		567B1A631EF7AE6B00A2CB5B /* Build configuration list for PBXNativeTarget "h5gameTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +560,7 @@
 				567B1A651EF7AE6B00A2CB5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		567B1A661EF7AE6B00A2CB5B /* Build configuration list for PBXNativeTarget "h5gameUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +569,7 @@
 				567B1A681EF7AE6B00A2CB5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
