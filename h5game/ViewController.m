@@ -79,7 +79,7 @@ NSString *gamecode;
 
 - (void)viewDidLoad {
     
-    NSLog(@"test");
+    NSLog(@"demotest");
     
     [super viewDidLoad];
     
