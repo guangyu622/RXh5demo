@@ -79,6 +79,8 @@ NSString *gamecode;
 
 - (void)viewDidLoad {
     
+    NSLog(@"test");
+    
     [super viewDidLoad];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -185,12 +187,12 @@ NSString *gamecode;
     NSString *idfaString = [self getSaveAdIDFromKeyChain];
     
     NSString *public_key_path = [[NSBundle mainBundle] pathForResource:@"public_key.der" ofType:nil];
-//    NSString *private_key_path = [[NSBundle mainBundle] pathForResource:@"private_key.p12" ofType:nil];
+    NSString *private_key_path = [[NSBundle mainBundle] pathForResource:@"private_key.p12" ofType:nil];
     
     NSString *encryptStr = [RSAEncryptor encryptString:idfaString publicKeyWithContentsOfFile:public_key_path];
-//    NSLog(@"加密前:%@", idfaString);
-//    NSLog(@"加密后:%@", encryptStr);
-//    NSLog(@"解密后:%@", [RSAEncryptor decryptString:encryptStr privateKeyWithContentsOfFile:private_key_path password:@"123"]);
+    NSLog(@"加密前:%@", idfaString);
+    NSLog(@"加密后:%@", encryptStr);
+    NSLog(@"解密后:%@", [RSAEncryptor decryptString:encryptStr privateKeyWithContentsOfFile:private_key_path password:@"123"]);
     
     NSString *strKey = [NSString stringWithFormat:@"%@%@", HF_INSTALLACTIVEFLAG, APPID];
     
